@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 1000px;
+    border: 1px solid black;
+    background-color: aqua;
+    flex-wrap: wrap;
+    justify-content: center;  /*main axis me work krega */
+    align-items: center;       /*cross axis me work krega */
+    column-gap: 10px;    /* items ke beech me space aata hai */
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    align-content: center;
+    flex-grow: 1;  /*Jitna space available tha parent me vo child le lega*/
+}
+
+.item2{
+    order: -1;   /* by default order 0 hota hai svb child ka.*/ 
+    flex-grow: 3; /*baki child se 3 times size ho jayga*/
+    align-self: flex-end; /*kisi particular child ko move kr sakhte hai*/
+}
